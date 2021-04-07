@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #FEF0DA;
+}
+
+
+.container {
+	width: 50vw;
+	background-color: #E48080;
+	margin: 0 auto;
+	border-radius: 10%;
+}
+
+.divNome {
+	background: #FEF0DA;
+	width: 30%;
+	height: 10%;
+	border-radius: 10%;
+}
+
+.inputCity{
+	animation-delay: 5s;
+}
