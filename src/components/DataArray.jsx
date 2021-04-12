@@ -1,6 +1,11 @@
 import React, {useState, useEffect} from "react";
 import { Field, FieldArray, ErrorMessage } from "formik";
 import axios from 'axios';
+import MomentUtils from '@date-io/moment';
+import {
+  MuiPickersUtilsProvider,
+  KeyboardDatePicker,
+} from '@material-ui/pickers';
 
 import  Conditional  from "./Conditional";
 import StarsInput from "./StarsInput";
@@ -8,7 +13,7 @@ import GetCity from "./GetCity";
 
 
 
-function DataArray({ name,isValid, form: { values, errors, status, ...bag}, ...arrayHelpers }) {
+function DataArray({ name, form: { values, errors, status, ...bag}, ...arrayHelpers }) {
 
   const addNew = () => {
     arrayHelpers.push({});
@@ -22,6 +27,7 @@ function DataArray({ name,isValid, form: { values, errors, status, ...bag}, ...a
   
   const [cidade, setCidade] = useState("");
   
+  const [selectedDate, setSelectedDate] = useState("");
   
   
   const [apiData,setApiData]=useState([]);
@@ -36,6 +42,12 @@ function DataArray({ name,isValid, form: { values, errors, status, ...bag}, ...a
     if (event.key === 'Enter')
       setEmailShowed(true)
   }
+
+ 
+
+  
+
+  
 
 
 
@@ -113,9 +125,28 @@ useEffect(() => {
 
                 <div  className="answers2">
 
-                <Field className="input" onKeyPress={showEmail}
-                  name={`${name}[${index}].birthDate`} type="date" 
-                />
+
+                <MuiPickersUtilsProvider utils={MomentUtils}>
+                <KeyboardDatePicker
+                className="input"
+          margin="normal"
+          disableToolbar
+          openTo="year"
+          views={["year", "month", "date"]}
+          id="date-picker-dialog"
+          format="DD/MM/yyyy"
+          onKeyPress={showEmail}
+          onChange={(date) => {
+    setSelectedDate(date);
+     bag.setFieldValue(`${name}[${index}].birthDate`,(date));
+  }}
+          KeyboardButtonProps={{
+            'aria-label': 'change date',
+          }}
+        />
+        </MuiPickersUtilsProvider>
+
+                
                 <ErrorMessage  name={`${name}[${index}].birthDate`} />
                 </div>
 
