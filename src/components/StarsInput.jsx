@@ -1,5 +1,5 @@
 import React from "react";
-import { Field } from "formik";
+import { Field,ErrorMessage } from "formik";
 import Stars from "./Stars";
 
 
@@ -14,6 +14,7 @@ const StarsInput = () => (
             count={value}
             handleClick={number => setFieldValue(fieldName, number)}
           />
+          
         </div>
     
     )}

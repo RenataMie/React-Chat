@@ -4,7 +4,7 @@ import Avaliacao from "./Avaliacao";
 
 
 const Stars = ({ count, handleClick }) => (
-  <span>
+  <span className="stars">
     {[...Array(5).keys()].map(i => (
       <Avaliacao key={i} isFull={i < count} onClick={() => handleClick(i + 1)} />
     ))}

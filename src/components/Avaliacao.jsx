@@ -12,7 +12,7 @@ const renderStar = isFull => {
 };
 
 const Avaliacao = ({ isFull, onClick }) => (
-  <span onClick={onClick}>
+  <span className="star" onClick={onClick}>
     {renderStar(isFull)}
   </span>
 );
