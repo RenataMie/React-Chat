@@ -5,8 +5,6 @@ import {TextField} from '@material-ui/core';
 
 import "./index.css";
 
-
-
 function GetCity({ data, onSelect, onKeyPress, isHighlighted})  {
 
 	const fieldName = "city";
@@ -15,11 +13,8 @@ function GetCity({ data, onSelect, onKeyPress, isHighlighted})  {
     const [search, setSearch] = useState("");
     const [cursor, setCursor] = useState(-1);
     
-
-
     const searchContainer = useRef(null);
     const searchResultRef = useRef(null);
-
 
 
     useEffect(() => {
@@ -30,16 +25,12 @@ function GetCity({ data, onSelect, onKeyPress, isHighlighted})  {
         };
     }, []);
 
-
-
     const scrollIntoView = position => {
         searchResultRef.current.parentNode.scrollTo({
             top: position,
             behavior: "smooth"
         });
     };
-
-
 
 
     useEffect(() => {
@@ -52,8 +43,6 @@ function GetCity({ data, onSelect, onKeyPress, isHighlighted})  {
     }, [cursor]);
 
 
-
-    
     const suggestions = useMemo(() => {
         if (!search) return ("");
 
@@ -66,8 +55,6 @@ function GetCity({ data, onSelect, onKeyPress, isHighlighted})  {
     }, [data, search]);
 
 
-
-
     const handleClickOutside = event => {
         if (
             searchContainer.current &&
@@ -76,8 +63,6 @@ function GetCity({ data, onSelect, onKeyPress, isHighlighted})  {
             hideSuggestion();
         }
     };
-
-
 
     function showSuggestion() {
 		 setVisiblity(true);
@@ -89,10 +74,7 @@ function GetCity({ data, onSelect, onKeyPress, isHighlighted})  {
     }
 
 
-
     return (
-
-
 
         <div   className="answers2">
 
@@ -135,12 +117,6 @@ function GetCity({ data, onSelect, onKeyPress, isHighlighted})  {
                     				{suggestions[key].nome}, {suggestions[key].microrregiao.mesorregiao.UF.sigla}
                       			
         				</li>
-
-        				
-
-        				
-
-                      
                     ))}
                 </ul>
 

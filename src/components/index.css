@@ -83,13 +83,14 @@ span {
 
 .input {
 	max-width: 200px;
-	width: auto;
+	width:40vw;
 	border: none;
 	background: transparent;
 	outline: none;
 	font-family: 'Spartan', sans-serif;
 	padding: 5px 0 5px 13px;
 	text-align: left;
+	overflow: hidden;
 
 }
 
