@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import { Field, FieldArray, ErrorMessage } from "formik";
 import axios from 'axios';
-import MomentUtils from '@date-io/moment';
+import 'date-fns';
+import DateFnsUtils from '@date-io/date-fns';
 import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
@@ -27,7 +28,7 @@ function DataArray({ name, form: { values, errors, status, ...bag}, ...arrayHelp
   
   const [cidade, setCidade] = useState("");
   
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedDate, setSelectedDate] = useState(new Date());
   
   
   const [apiData,setApiData]=useState([]);
@@ -126,19 +127,18 @@ useEffect(() => {
                 <div  className="answers2">
 
 
-                <MuiPickersUtilsProvider utils={MomentUtils}>
+                <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <KeyboardDatePicker
-                className="input"
-          margin="normal"
-          disableToolbar
-          openTo="year"
-          views={["year", "month", "date"]}
-          id="date-picker-dialog"
-          format="DD/MM/yyyy"
+               
+         value={selectedDate}
+         variant="dialog"
+          format="dd/MM/yyyy"
+          
           onKeyPress={showEmail}
           onChange={(date) => {
     setSelectedDate(date);
      bag.setFieldValue(`${name}[${index}].birthDate`,(date));
+     setEmailShowed(true);
   }}
           KeyboardButtonProps={{
             'aria-label': 'change date',
