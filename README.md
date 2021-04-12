@@ -6,4 +6,4 @@ Form as a chat using:
 ## Links
 
 * Repository: https://github.com/RenataMie/React-chat
-* Deployed at: react-chat-git-main-renatamie.vercel.app
+* Deployed at: https://react-chat-git-main-renatamie.vercel.app/
