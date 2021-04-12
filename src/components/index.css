@@ -16,7 +16,7 @@ footer {
 .container {
 	display: flex;
 	max-width: 400px;
-	width: auto;
+	width: 80vw;
 	background-color: #FFD6DE;
 	margin: 0 auto;
 	border-radius: 20px;
@@ -77,11 +77,13 @@ span {
 	padding: 5px 0 0 10px;
 	border-radius: 30px;
 	position: relative;
-	left:170px;
+	left:150px;
 	top: -50px;
 }
 
 .input {
+	max-width: 200px;
+	width: auto;
 	border: none;
 	background: transparent;
 	outline: none;
@@ -100,7 +102,7 @@ span {
 	padding: 5px 0 0 10px;
 	border-radius: 30px;
 	position: relative;
-	left:170px;
+	left:150px;
 	top: -80px;
 }
 

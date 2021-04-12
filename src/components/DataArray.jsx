@@ -133,12 +133,15 @@ useEffect(() => {
          value={selectedDate}
          variant="dialog"
           format="dd/MM/yyyy"
+          margin = "normal"
+          keyboardIcon=""
+          
           
           onKeyPress={showEmail}
           onChange={(date) => {
     setSelectedDate(date);
      bag.setFieldValue(`${name}[${index}].birthDate`,(date));
-     setEmailShowed(true);
+     
   }}
           KeyboardButtonProps={{
             'aria-label': 'change date',
