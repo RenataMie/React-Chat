@@ -15,7 +15,7 @@ footer {
 
 .container {
 	display: flex;
-	max-width: 350px;
+	max-width: 400px;
 	width: 80vw;
 	background-color: #FFD6DE;
 	margin: 0 auto;
@@ -42,7 +42,7 @@ span {
 	top:-70px;
 	background: #E48080;
 	margin: 10px 0 0 10px;
-	
+	max-width: 200px;
 	width: 40vw;
 	height: auto;
 	text-align: left;
@@ -56,7 +56,7 @@ span {
 	top:-110px;
 	background: #E48080;
 	margin: 10px 0 0 10px;
-	
+	max-width: 200px;
 	width: 40vw;
 	height: auto;
 	text-align: left;
@@ -70,7 +70,7 @@ span {
 .answers {
 	background: #BBD3EC;
 	margin: 0;
-	
+	max-width: 200px;
 	width: 40vw;
 	height: auto;
 	
@@ -96,7 +96,7 @@ span {
 .answers2 {
 	background: #BBD3EC;
 	margin: 0 5px;
-	
+	max-width: 200px;
 	width: 40vw;
 	height: auto;
 	text-align: left;
@@ -200,7 +200,7 @@ button:hover:enabled {
   transition: all 0.5s ease;
   position: relative;
   left: 20px;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .star:hover {

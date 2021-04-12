@@ -188,7 +188,7 @@ useEffect(() => {
 
                 
                 
-                <div>
+                <div style={{color:"red"}}>
                  <ErrorMessage 
                   name={`${name}[${index}].email`}  /> 
                 
