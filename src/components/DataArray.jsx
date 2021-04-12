@@ -75,7 +75,7 @@ useEffect(() => {
 
             
                 <div >
-                  <img className="img2" src={'/images/woman.png'} alt="Logo" width="50" height="50" />
+                  <img className="img2" src={'/images/woman.png'} alt="Logo" width="45" height="45" />
                 </div>
 
                 <div className="questions2">
@@ -117,7 +117,7 @@ useEffect(() => {
               >
 
                 <div >
-                  <img className="img2" src={'/images/woman.png'} alt="Logo" width="50" height="50" />
+                  <img className="img2" src={'/images/woman.png'} alt="Logo" width="45" height="45" />
                 </div>
 
                 <div className="questions2">
@@ -135,7 +135,7 @@ useEffect(() => {
           format="dd/MM/yyyy"
           margin = "normal"
           keyboardIcon=""
-          
+
           
           onKeyPress={showEmail}
           onChange={(date) => {
@@ -166,7 +166,7 @@ useEffect(() => {
               >
 
                 <div >
-                  <img className="img2" src={'/images/woman.png'} alt="Logo" width="50" height="50" />
+                  <img className="img2" src={'/images/woman.png'} alt="Logo" width="45" height="45" />
                 </div>
 
                 <div className="questions2">
@@ -211,7 +211,7 @@ useEffect(() => {
               >
 
                <div >
-                  <img className="img2" src={'/images/woman.png'} alt="Logo" width="50" height="50" />
+                  <img className="img2" src={'/images/woman.png'} alt="Logo" width="45" height="45" />
                 </div>
 
                 <div className="questions2">

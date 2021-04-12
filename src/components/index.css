@@ -15,7 +15,7 @@ footer {
 
 .container {
 	display: flex;
-	max-width: 400px;
+	max-width: 350px;
 	width: 80vw;
 	background-color: #FFD6DE;
 	margin: 0 auto;
@@ -42,8 +42,8 @@ span {
 	top:-70px;
 	background: #E48080;
 	margin: 10px 0 0 10px;
-	max-width: 250px;
-	width: auto;
+	
+	width: 20vw;
 	height: auto;
 	text-align: left;
 	padding: 15px 20px;
@@ -56,8 +56,8 @@ span {
 	top:-110px;
 	background: #E48080;
 	margin: 10px 0 0 10px;
-	max-width: 250px;
-	width: auto;
+	
+	width: 20vw;
 	height: auto;
 	text-align: left;
 	padding: 15px 20px;
@@ -70,14 +70,14 @@ span {
 .answers {
 	background: #BBD3EC;
 	margin: 0;
-	max-width: 200px;
-	width: auto;
+	
+	width: 18vw;
 	height: auto;
-	text-align: left;
-	padding: 5px 0 0 10px;
+	
+	padding: 5px 0 0 5px;
 	border-radius: 30px;
 	position: relative;
-	left:150px;
+	left:130px;
 	top: -50px;
 }
 
@@ -89,20 +89,21 @@ span {
 	outline: none;
 	font-family: 'Spartan', sans-serif;
 	padding: 5px 0 5px 13px;
+	text-align: left;
 
 }
 
 .answers2 {
 	background: #BBD3EC;
 	margin: 0 5px;
-	max-width: 200px;
-	width: auto;
+	
+	width: 18vw;
 	height: auto;
 	text-align: left;
 	padding: 5px 0 0 10px;
 	border-radius: 30px;
 	position: relative;
-	left:150px;
+	left:120px;
 	top: -80px;
 }
 

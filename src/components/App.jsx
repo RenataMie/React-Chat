@@ -90,7 +90,7 @@ function App() {
         <div>
 
         <div >
-        <img className="img1" src={'/images/woman.png'} alt="Logo" width="50" height="50" />
+        <img className="img1" src={'/images/woman.png'} alt="Logo" width="45" height="45" />
         </div>
           
           
